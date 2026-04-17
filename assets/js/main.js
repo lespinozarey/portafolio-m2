@@ -1,3 +1,5 @@
 $("button").click(function() {
-    alert("Agregado al carrito!");
+    var numProductos = parseInt($("#numProductos").html()) + 1;
+    $("#numProductos").html(numProductos);
+    alert(numProductos + " productos en el carrito");
 });
